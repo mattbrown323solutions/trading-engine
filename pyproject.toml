@@ -12,6 +12,8 @@ dependencies = [
   "psycopg[binary]>=3.2,<4",
   "openai>=1.95,<2",
   "alembic>=1.16,<2",
+"alpaca-py>=0.42,<1",
+"pytest>=8,<9",
 ]
 
 [project.optional-dependencies]
