@@ -9,6 +9,11 @@ class Settings(BaseSettings):
     broker_execution_enabled: bool = False
     paper_trading_only: bool = True
 
+    alpaca_api_key_id: str
+    alpaca_api_secret_key: str
+    alpaca_trading_base_url: str = "https://paper-api.alpaca.markets"
+    alpaca_market_data_feed: str = "iex"
+
     database_url: str = (
         "postgresql+psycopg://trading:change-me-local-only"
         "@postgres:5432/trading_engine"
