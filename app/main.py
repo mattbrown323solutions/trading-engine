@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 
+from app.api.market import router as market_router
 from app.api import broker
 from app.api.events import router as events_router
 from app.api.health import router as health_router
@@ -16,3 +17,4 @@ app = FastAPI(
 app.include_router(health_router)
 app.include_router(events_router)
 app.include_router(broker.router)
+app.include_router(market_router)
